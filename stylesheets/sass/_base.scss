@@ -1,0 +1,55 @@
+$padding: 25px;
+$padding-low: 15px;
+
+div.container {
+    @include image-rendering(optimizeSpeed);
+    @include transform(translateY(10px));
+    @include outer-container;
+    // @include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.65));
+    background: orange;
+    div.element,
+    div.element2 {
+        padding: $padding;
+        @include media($low) {
+            padding-top: $padding-low;
+            padding-bottom: $padding-low;
+        }
+    }
+    div.parent-element {
+        background: blue;
+        @include span-columns(8);
+        @include media($tablet) {
+            @include span-columns($grid-columns);
+        }
+        div.element {
+            background: yellow;
+            @include span-columns(2 of 5);
+            @include media($mobile) {
+                @include span-columns(5 of 5);
+            }
+        }
+        div.element2 {
+            background: pink;
+            @include span-columns(3 of 5);
+            @include media($mobile) {
+                @include span-columns(5 of 5);
+            }
+        }
+    }
+    .aside {
+        @include span-columns(2);
+        background: red;
+        min-height: 100px;
+        padding: $padding $padding-low $padding $padding-low;
+        @include media($low) {
+            padding-top: $padding-low;
+            padding-bottom: $padding-low;
+        }
+        @include media($mobile) {
+            @include span-columns($grid-columns);
+        }
+        @include media($tablet) {
+            @include span-columns($grid-columns);
+        }
+    }
+}

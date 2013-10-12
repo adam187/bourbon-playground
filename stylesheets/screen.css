@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+div.container {
+  image-rendering: optimizeSpeed;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  *zoom: 1;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background: orange; }
+  div.container:before, div.container:after {
+    content: " ";
+    display: table; }
+  div.container:after {
+    clear: both; }
+  div.container div.element,
+  div.container div.element2 {
+    padding: 25px; }
+    @media screen and (max-height: 500px) {
+      div.container div.element,
+      div.container div.element2 {
+        padding-top: 15px;
+        padding-bottom: 15px; } }
+  div.container div.parent-element {
+    background: blue;
+    display: block;
+    float: left;
+    margin-right: 1.1236%;
+    width: 79.77528%; }
+    div.container div.parent-element:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.container div.parent-element {
+        display: block;
+        float: left;
+        margin-right: 1.40845%;
+        width: 100%; }
+        div.container div.parent-element:last-child {
+          margin-right: 0; } }
+    div.container div.parent-element div.element {
+      background: yellow;
+      display: block;
+      float: left;
+      margin-right: 2.27273%;
+      width: 38.63636%; }
+      div.container div.parent-element div.element:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        div.container div.parent-element div.element {
+          display: block;
+          float: left;
+          margin-right: 2.27273%;
+          width: 100%; }
+          div.container div.parent-element div.element:last-child {
+            margin-right: 0; } }
+    div.container div.parent-element div.element2 {
+      background: pink;
+      display: block;
+      float: left;
+      margin-right: 2.27273%;
+      width: 59.09091%; }
+      div.container div.parent-element div.element2:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        div.container div.parent-element div.element2 {
+          display: block;
+          float: left;
+          margin-right: 2.27273%;
+          width: 100%; }
+          div.container div.parent-element div.element2:last-child {
+            margin-right: 0; } }
+  div.container .aside {
+    display: block;
+    float: left;
+    margin-right: 1.1236%;
+    width: 19.10112%;
+    background: red;
+    min-height: 100px;
+    padding: 25px 15px 25px 15px; }
+    div.container .aside:last-child {
+      margin-right: 0; }
+    @media screen and (max-height: 500px) {
+      div.container .aside {
+        padding-top: 15px;
+        padding-bottom: 15px; } }
+    @media screen and (max-width: 480px) {
+      div.container .aside {
+        display: block;
+        float: left;
+        margin-right: 2.85714%;
+        width: 100%; }
+        div.container .aside:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 768px) {
+      div.container .aside {
+        display: block;
+        float: left;
+        margin-right: 1.40845%;
+        width: 100%; }
+        div.container .aside:last-child {
+          margin-right: 0; } }

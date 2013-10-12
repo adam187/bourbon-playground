@@ -1,0 +1,10 @@
+{
+  "name": "bourbon",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "<2.0.0",
+    "html5shiv": "~3.7.0",
+    "modernizr": "~2.6.2",
+    "selectivizr": "https://github.com/keithclark/selectivizr.git"
+  }
+}
